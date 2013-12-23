@@ -8,7 +8,7 @@ This tool is a work in progress. The documentation is limited, and there's no de
 
 ~~Grab Modernizr, and then tell it how to detect :checked support:~~
 
-The JavaScript code below doesn't work with the latest version of Modernizr. See issue #1 for details and a temporary workaround. Alternately, you could wrap the script in [conditional comments](http://www.quirksmode.org/css/condcom.html) and not use Modernizr at all. A longer-term fix is in the works - stay tuned!
+The JavaScript code below doesn't work with the latest version of Modernizr. See issue [#1](https://github.com/rdebeasi/checked-polyfill/issues/1) for details and a temporary workaround. Alternately, you could wrap the script in [conditional comments](http://www.quirksmode.org/css/condcom.html) and not use Modernizr at all. A longer-term fix is in the works - stay tuned!
 
 ```javascript
 Modernizr.addTest('checkedselector',function(){
