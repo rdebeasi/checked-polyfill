@@ -15,7 +15,7 @@
 				$label.removeClass('checked');
 			}
 			// We modify the label as well as the input because authors may want to style the labels based on the state of the chebkox, and IE7 and IE8 don't fully support sibling selectors.
-			// For more info: http://www.quirksmode.org/css/contents.html
+			// For more info: http://www.quirksmode.org/css/selectors/#t11
 			return $elem;
 		}
 

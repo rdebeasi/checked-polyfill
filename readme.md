@@ -1,14 +1,14 @@
 # Checked polyfill
 
-This code adds support for the :checked pseudo-class on browsers that don't natively support it. More precisely, it adds a .checked class that behaves like the :checked psuedo selector. If you use the "for" attribute on your label, it will also apply the .checked class to your label. That helps work around the [buggy sibling selector support in IE7](http://oncemade.com/adjacent-sibling-selector-bug-in-ie7).
+This code adds support for the :checked pseudo-class on browsers that don't natively support it. More precisely, it adds a .checked class that behaves like the :checked psuedo selector. If you use the "for" attribute on your label, it will also apply the .checked class to your label. That helps work around the [buggy sibling selector support in IE7](http://www.quirksmode.org/css/selectors/#t11).
 
 This tool is a work in progress. The documentation is limited, and there's no demo yet. There may be bugs. If you see anything that could be better, please let me know!
 
-Written by [Ryan DeBeasi](http://www.ryandebeasi.com/) of [352 Media Group](http://www.352media.com/).
-
 ##Usage
 
-Grab Modernizr, and then tell it how to detect :checked support:
+~~Grab Modernizr, and then tell it how to detect :checked support:~~
+
+The JavaScript code below doesn't work with the latest version of Modernizr. See issue #1 for details and a temporary workaround. Alternately, you could wrap the script in [conditional comments](http://www.quirksmode.org/css/condcom.html) and not use Modernizr at all. A longer-term fix is in the works - stay tuned!
 
 ```javascript
 Modernizr.addTest('checkedselector',function(){
@@ -39,7 +39,7 @@ Finally, use :checked and .checked to style your radio buttons. You'll get nativ
 	background-color: #ccc;	
 }
 
-..myStyledLabels input[type="radio"]:checked + label {
+.myStyledLabels input[type="radio"]:checked + label {
 	background-color: #ccc;
 }
 
@@ -49,7 +49,7 @@ Finally, use :checked and .checked to style your radio buttons. You'll get nativ
 
 Checked polyfill is licensesed under the MIT License, and is free for commercial or personal use.
 
-Copyright &copy; 2012 352 Media Group
+Copyright &copy; 2012-2013 [352 Media Group](http://www.352media.com/).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
