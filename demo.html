@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<title>Checked Polyfill</title>
+	<link href='http://fonts.googleapis.com/css?family=Vollkorn:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="demo.css">
+</head>
+	<body>
+		<div class="wrapper">
+			<h1>Checked Polyfill</h1>
+			<p class="lead">The <code>:checked</code> pseudo-class allows developers to create custom checkboxes and checkbox buttons using pure CSS. <code>:checked</code> <a href="http://kimblim.dk/css-tests/selectors/">doesn't work on IE8 or earlier</a>, but this lightweight script fills in that functionality on older browsers. Check it out:</p>
+			<form>
+				<fieldset>
+					<legend>What food should we serve?</legend>
+					<div><input type="checkbox" name="food" id="piza" value="pizza"><label for="pizza">Pizza</label></div>
+					<div><input type="checkbox" name="food" id="cake" value="cake"><label for="cake">Cake</label></div>
+					<div><input type="checkbox" name="food" id="veggies" value="veggies"><label for="veggies">Veggies</label></div>
+					<div><input type="checkbox" name="food" id="wings" value="wings"><label for="wings">Wings</label></div>
+					<div><input type="checkbox" name="food" id="tofu" value="tofu"><label for="tofu">Tofu</label></div>
+				</fieldset>
+				<fieldset>
+					<legend>How big will the party be?</legend>
+					<div><input type="radio" name="size" id="small" value="small"><label for="small">Small</label></div>
+					<div><input type="radio" name="size" id="medium" value="medium"><label for="medium">Medium</label></div>
+					<div><input type="radio" name="size" id="large" value="large"><label for="large">Large</label></div>
+					<div><input type="radio" name="size" id="xlarge" value="xlarge"><label for="xlarge">Extra Large</label></div>
+					<div><input type="radio" name="size" id="timessquare" value="timessquare"><label for="timessquare">All of Times Square</label></div>
+				</fieldset>
+			</form>
+			<div class="btn-container">
+				<a href="#" class="btn btn-primary">Download Code</a>
+				<a href="#" class="btn btn-secondary">View on GitHub</a>
+			</div>
+			<p class="credit">Made with &lt;3 in Boston by <a href="http://www.ryandebeasi.com/">Ryan DeBeasi</a></p>
+		</div>
+		
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="checked-polyfill.js"></script>
+		<script>
+			$(function() {
+
+			});
+		</script>
+	</body>
+</html>
