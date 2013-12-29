@@ -20,7 +20,7 @@ a:hover {
 
 .wrapper {
 	width: 800px;
-	margin: 0 auto;
+	margin: 20px auto;
 	padding: 30px;
 	margin-top: 20px;
 	background-color: #E7FBFF;
@@ -81,10 +81,56 @@ legend {
 
 /* Custom checkboxes & labels */
 
+input[type="radio"], input[type="checkbox"] {
+	visibility: hidden;
+	/* Using display: none will make old IE ignore the checkboxes */
+}
+
 label {
 	cursor: pointer;
 	font-size: 20px;
 }
+
+label {
+	display: inline-block;
+	height: 33px;
+	margin: 5px 0;
+}
+
+input[type="radio"] + label {
+	background: transparent url("img/radios.png") no-repeat 0 0;
+	padding-left: 40px;
+}
+
+input[type="radio"] + label:hover {
+	background-position: 0 -128px;
+}
+
+input[type="radio"]:checked + label {
+	background-position: 0 -257px;
+}
+
+input[type="radio"]:checked + label:hover {
+	background-position: 0 -385px;
+}
+
+input[type="checkbox"] + label {
+	background: transparent url("img/checkboxes.png") no-repeat 0 0;
+	padding-left: 40px;
+}
+
+input[type="checkbox"] + label:hover {
+	background-position: 0 -130px;
+}
+
+input[type="checkbox"]:checked + label {
+	background-position: 0 -260px;
+}
+
+input[type="checkbox"]:checked + label:hover {
+	background-position: 0 -390px;
+}
+
 
 /* Buttons */
 
