@@ -48,7 +48,7 @@ h1 {
 }
 
 form {
-	overflow: hidden;
+	overflow: hidden; /* Clear floats and hide checkboxes/radio buttons (see below) */
 	margin-left: -5%; /* Offset the margin of the leftmost fieldset */
 }
 
@@ -74,11 +74,11 @@ legend {
 /* Custom checkboxes & labels */
 
 input[type="radio"], input[type="checkbox"] {
-	visibility: hidden;
-	width: 0;
-	height: 0;
+	/* Hide checkbox/radio button.
+	** Using display: none or visibility: hidden will make old IE ignore the checkboxes. */
+	position: absolute;
+	left: -9999px;
 	margin: 0;
-	/* Using display: none will make old IE ignore the checkboxes */
 }
 
 label {
@@ -105,7 +105,15 @@ input[type="radio"]:checked + label {
 	background-position: 0 -257px;
 }
 
+input[type="radio"].checked + label {
+	background-position: 0 -257px;
+}
+
 input[type="radio"]:checked + label:hover {
+	background-position: 0 -385px;
+}
+
+input[type="radio"].checked + label:hover {
 	background-position: 0 -385px;
 }
 
@@ -122,10 +130,17 @@ input[type="checkbox"]:checked + label {
 	background-position: 0 -260px;
 }
 
+input[type="checkbox"].checked + label {
+	background-position: 0 -260px;
+}
+
 input[type="checkbox"]:checked + label:hover {
 	background-position: 0 -390px;
 }
 
+input[type="checkbox"].checked + label:hover {
+	background-position: 0 -390px;
+}
 
 /* Buttons */
 
