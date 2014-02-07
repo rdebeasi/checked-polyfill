@@ -47,14 +47,6 @@ h1 {
 	margin-top: 50px;
 }
 
-.credit a {
-	color: #06B81E;
-}
-
-.credit a:hover {
-	color: #048716
-}
-
 form {
 	overflow: hidden;
 	margin-left: -5%; /* Offset the margin of the leftmost fieldset */
@@ -83,6 +75,9 @@ legend {
 
 input[type="radio"], input[type="checkbox"] {
 	visibility: hidden;
+	width: 0;
+	height: 0;
+	margin: 0;
 	/* Using display: none will make old IE ignore the checkboxes */
 }
 
@@ -137,11 +132,13 @@ input[type="checkbox"]:checked + label:hover {
 .btn-container {
 	clear: both;
 	overflow: hidden;
-	width: 75%;
+	text-align: center;
 	margin: 25px auto;
 }
 
 .btn {
+	display: inline-block;
+	width: 30%;
 	padding: 10px 20px;
 	border-radius: 5px;
 	color: #fff;
@@ -152,6 +149,10 @@ input[type="checkbox"]:checked + label:hover {
 	-moz-transition: background-color .2s;
 	-webkit-transition: background-color .2s;
 	transition: background-color .2s;
+}
+
+.btn-container .btn:first-child {
+	margin-right: 50px;
 }
 
 .btn:hover {
@@ -166,12 +167,4 @@ input[type="checkbox"]:checked + label:hover {
 
 .btn-secondary:hover {
 	background-color: #b9127c;
-}
-
-.btn-container .btn-primary {
-	float: left;
-}
-
-.btn-container .btn-secondary {
-	float: right;
 }
