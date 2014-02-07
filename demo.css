@@ -84,12 +84,9 @@ input[type="radio"], input[type="checkbox"] {
 label {
 	cursor: pointer;
 	font-size: 20px;
-}
-
-label {
-	display: inline-block;
+	display: block;
 	height: 33px;
-	margin: 5px 0;
+	margin: 10px 0;
 }
 
 input[type="radio"] + label {
