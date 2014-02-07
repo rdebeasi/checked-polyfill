@@ -1,0 +1,182 @@
+body {
+	background-color: #BFE6E8;
+	color: #333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #1a00f2;
+	-moz-transition: color .2s;
+	-webkit-transition: color .2s;
+	transition: color .2s;
+}
+
+a:hover {
+	color: #1500bf;
+}
+
+.wrapper {
+	width: 800px;
+	margin: 20px auto;
+	padding: 30px;
+	margin-top: 20px;
+	background-color: #E7FBFF;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+h1, h2, legend {
+	font-family: 'Vollkorn', serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 40px;
+	margin: 0;
+	color: #3D26FF;
+}
+
+.credit {
+	color: #666;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+}
+
+form {
+	overflow: hidden; /* Clear floats and hide checkboxes/radio buttons (see below) */
+	margin-left: -5%; /* Offset the margin of the leftmost fieldset */
+}
+
+fieldset {
+	width: 45%;
+	float: left;
+	border: none;
+	padding: 0;
+	margin: 0 0 2.5% 5%;
+}
+
+.lead {
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+legend {
+	font-size: 26px;
+	color: #E8169B;
+}
+
+/* Custom checkboxes & labels */
+
+input[type="radio"], input[type="checkbox"] {
+	/* Hide checkbox/radio button.
+	** Using display: none or visibility: hidden will make old IE ignore the checkboxes. */
+	position: absolute;
+	left: -9999px;
+	margin: 0;
+}
+
+label {
+	cursor: pointer;
+	font-size: 20px;
+	display: block;
+	height: 33px;
+	margin: 10px 0;
+}
+
+input[type="radio"] + label {
+	background: transparent url("img/radios.png") no-repeat 0 0;
+	padding-left: 40px;
+}
+
+input[type="radio"] + label:hover {
+	background-position: 0 -128px;
+}
+
+input[type="radio"]:checked + label {
+	background-position: 0 -257px;
+}
+
+input[type="radio"].checked + label {
+	background-position: 0 -257px;
+}
+
+input[type="radio"]:checked + label:hover {
+	background-position: 0 -385px;
+}
+
+input[type="radio"].checked + label:hover {
+	background-position: 0 -385px;
+}
+
+input[type="checkbox"] + label {
+	background: transparent url("img/checkboxes.png") no-repeat 0 0;
+	padding-left: 40px;
+}
+
+input[type="checkbox"] + label:hover {
+	background-position: 0 -130px;
+}
+
+input[type="checkbox"]:checked + label {
+	background-position: 0 -260px;
+}
+
+input[type="checkbox"].checked + label {
+	background-position: 0 -260px;
+}
+
+input[type="checkbox"]:checked + label:hover {
+	background-position: 0 -390px;
+}
+
+input[type="checkbox"].checked + label:hover {
+	background-position: 0 -390px;
+}
+
+/* Buttons */
+
+.btn-container {
+	clear: both;
+	overflow: hidden;
+	text-align: center;
+	margin: 25px auto;
+}
+
+.btn {
+	display: inline-block;
+	width: 30%;
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #3D26FF;
+	font-family: 'Vollkorn', serif;
+	text-decoration: none;
+	font-size: 26px;
+	-moz-transition: background-color .2s;
+	-webkit-transition: background-color .2s;
+	transition: background-color .2s;
+}
+
+.btn-container .btn:first-child {
+	margin-right: 50px;
+}
+
+.btn:hover {
+	background-color: #1a00f2;	
+	color: #fff;
+}
+
+.btn-secondary {
+	background-color: #E8169B;
+	
+}
+
+.btn-secondary:hover {
+	background-color: #b9127c;
+}
