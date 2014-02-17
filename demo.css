@@ -151,7 +151,8 @@ input[type="checkbox"].checked + label:hover {
 .btn {
 	display: inline-block;
 	width: 30%;
-	padding: 10px 20px;
+	line-height: 1.76;
+	padding: 12px 20px 8px 20px;
 	border-radius: 5px;
 	color: #fff;
 	background-color: #3D26FF;
