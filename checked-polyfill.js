@@ -55,6 +55,5 @@
 			}
 			checkValue($self); // Check value when plugin is first called, in case a value has already been set.
 		});
-
 	};
 })(jQuery);
