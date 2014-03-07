@@ -1,9 +1,32 @@
-/* 	Checked Polyfill
-		Author: Ryan DeBeasi (352 Media Group)
-		Description: Provides a .checked class that works like the :checked pseudo class on radio buttons and checkboxes but is available in older browsers such as IE7/8. */
+/*	Checked Polyfill 1.5
+	Provides a .checked class that works like the :checked pseudo class on radio buttons and checkboxes but is available in older browsers such as IE7/8. 
+	https://github.com/rdebeasi/checked-polyfill */
 
 (function ($) {
 	$.fn.checkedPolyfill = function (options) {
+		function supportsChecked() {
+			// Create a hidden input, style it, and then check to see whether the styles are applied.
+			// Inspired by Modernizr's testStyles function
+			var $style = $('<style type="text/css"> #checkedPolyfill-test:checked { margin-left: 123456px; display: none; } </style>}'),
+				$checkbox = $('<input type="checkbox" checked id="checkedPolyfill-test" />'),
+				result;
+			$('head').append($style);
+			$('body').append($checkbox);
+			if ($checkbox.css('margin-left') === '123456px') {
+				result = true;
+			} else {
+				result = false;
+			}
+			$style.remove();
+			$checkbox.remove();
+			return result;
+		}
+
+		if( supportsChecked() ) {
+			// Browser natively supports :checked and doesn't need the polyfill.
+			return false;
+		}
+
 		function checkValue ($elem) {
 			var $label = $('label[for="' + $elem.attr('id') + '"]');
 			// TODO: also find labels wrapped around the input
@@ -32,6 +55,5 @@
 			}
 			checkValue($self); // Check value when plugin is first called, in case a value has already been set.
 		});
-
 	};
 })(jQuery);
