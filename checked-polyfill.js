@@ -1,4 +1,4 @@
-/*	Checked Polyfill 2.0
+/*	Checked Polyfill 1.5
 	Provides a .checked class that works like the :checked pseudo class on radio buttons and checkboxes but is available in older browsers such as IE7/8. 
 	https://github.com/rdebeasi/checked-polyfill */
 
