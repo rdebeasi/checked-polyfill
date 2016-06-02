@@ -13,7 +13,9 @@ Include the script at the bottom of the page. (If you don't already have jQuery,
 In a script tag or a separate .js file, call the polyfill on elements that you'd like to style.
 
 ```javascript
-$('input:radio, input:checkbox').checkedPolyfill();
+$( document ).ready(function() {
+	$('input:radio, input:checkbox').checkedPolyfill();
+});
 ```
 
 Finally, use :checked and .checked to style your radio buttons. You'll get native support in modern browsers, and JS-based support older browsers (e.g., in IE7 and IE8). Put these selectors on separate lines.
