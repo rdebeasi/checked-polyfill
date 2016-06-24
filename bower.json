@@ -1,0 +1,24 @@
+{
+  "name": "Checked Polyfill",
+  "main": "checked-polyfill.js",
+  "homepage": "https://rdebeasi.github.io/checked-polyfill/",
+  "authors": [
+    "Ryan DeBeasi <hi@ryandebeasi.com>"
+  ],
+  "description": "Adds a .checked class that behaves like the :checked pseudo-class.",
+  "keywords": [
+    "polyfill",
+    "ie8",
+    "ie7",
+    "checked",
+    "css3"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
