@@ -1,8 +1,15 @@
 /*	Checked Polyfill 1.5
 	Provides a .checked class that works like the :checked pseudo class on radio buttons and checkboxes but is available in older browsers such as IE7/8. 
 	https://github.com/rdebeasi/checked-polyfill */
-
-(function ($) {
+(function (factory) {
+	if (typeof define === 'function' && define.amd) {
+		// AMD. Register as an anonymous module.
+		define(['jquery'], factory);
+	} else {
+		// Browser globals
+		factory(jQuery);
+	}
+}(function ($) {
 	$.fn.checkedPolyfill = function (options) {
 		function supportsChecked() {
 			// Create a hidden input, style it, and then check to see whether the styles are applied.
@@ -56,4 +63,4 @@
 			checkValue($self); // Check value when plugin is first called, in case a value has already been set.
 		});
 	};
-})(jQuery);
+}));
