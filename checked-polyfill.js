@@ -1,6 +1,8 @@
-/*	Checked Polyfill 1.5
-	Provides a .checked class that works like the :checked pseudo class on radio buttons and checkboxes but is available in older browsers such as IE7/8. 
-	https://github.com/rdebeasi/checked-polyfill */
+/*	Checked Polyfill 1.6
+ * Provides a .checked class that works like the :checked pseudo class on radio buttons and checkboxes but is available in older browsers such as IE7/8. 
+ * https://github.com/rdebeasi/checked-polyfill 
+ */
+
 (function (factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD. Register as an anonymous module.
