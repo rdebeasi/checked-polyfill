@@ -2,7 +2,11 @@
 
 This code adds support for the :checked pseudo-class on browsers that don't natively support it. On old browsers, it adds a .checked class that behaves like the :checked psuedo selector. If you use the "for" attribute on your label, it will also apply the .checked class to your label. That helps work around the [buggy sibling selector support in IE7](http://www.quirksmode.org/css/selectors/#t11).
 
+[]
+
 ## Usage
+
+Start by [downloading Checked Polyfill](https://github.com/rdebeasi/checked-polyfill/releases) or [installing it from npm](https://www.npmjs.com/package/checked-polyfill).
 
 Include the script at the bottom of the page. (If you don't already have jQuery, include that too.)
 
@@ -34,7 +38,7 @@ Finally, use :checked and .checked to style your radio buttons. You'll get nativ
 
 Checked polyfill is licensesed under the MIT License, and is free for commercial or personal use.
 
-Copyright &copy; 2012-2016 [352](http://www.352media.com/) and Ryan DeBeasi.
+Copyright &copy; 2012-2019 [Three Five Two](https://www.threefivetwo.com/) and Ryan DeBeasi.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
