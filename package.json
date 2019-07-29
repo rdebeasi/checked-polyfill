@@ -1,6 +1,6 @@
 {
   "name": "checked-polyfill",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Adds a .checked class that behaves like the :checked pseudo-class.",
   "main": "checked-polyfill.js",
   "scripts": {
