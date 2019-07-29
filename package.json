@@ -1,0 +1,19 @@
+{
+  "name": "checked-polyfill",
+  "version": "1.6.0",
+  "description": "Adds a .checked class that behaves like the :checked pseudo-class.",
+  "main": "checked-polyfill.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdebeasi/checked-polyfill.git"
+  },
+  "author": "Ryan DeBeasi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rdebeasi/checked-polyfill/issues"
+  },
+  "homepage": "https://github.com/rdebeasi/checked-polyfill#readme"
+}
