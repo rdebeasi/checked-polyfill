@@ -2,8 +2,6 @@
 
 This code adds support for the :checked pseudo-class on browsers that don't natively support it. On old browsers, it adds a .checked class that behaves like the :checked psuedo selector. If you use the "for" attribute on your label, it will also apply the .checked class to your label. That helps work around the [buggy sibling selector support in IE7](http://www.quirksmode.org/css/selectors/#t11).
 
-[]
-
 ## Usage
 
 Start by [downloading Checked Polyfill](https://github.com/rdebeasi/checked-polyfill/releases) or [installing it from npm](https://www.npmjs.com/package/checked-polyfill).
